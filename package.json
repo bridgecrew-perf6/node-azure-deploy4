@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "stop": "pm2 kill",
+    "start": "pm2 start index.js",
+    "list": "pm2 list",
+    "restart": "pm2 restart index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "pm2": "^5.1.2"
   }
 }
